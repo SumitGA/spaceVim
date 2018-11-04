@@ -1,0 +1,81 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2017 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "onedark"
+    background = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_inactive_separator = "fire"
+    enable_tabline_filetype_icon = true
+    enable_statusline_display_mode = false
+    default_indent = 2
+    relativenumber = true
+    # enable_ycm = true
+    enable_deoplete_at_start = true
+    filemanager = 'nerdtree'
+    enable_statusline_mode = true
+    guifont = "DejaVu\ Sans \Mono \for \Powerline \15"
+    snippet_engine = "neosnippet"
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto-completion-return-key-behavior = "nil"
+auto-completion-tab-key-behavior = "smart"
+auto-completion-delay = 200
+auto-completion-complete-with-key-sequence = "nil"
+auto-completion-complete-with-key-sequence-delay = 0.1,
+
+[[layers]]
+name = "ctrlp"
+
+[[layers]]
+name = 'shell'
+default_position = 'bottom'
+default_height = 3
+
+[[layers]]
+name = 'colorscheme'
+
+[[layers]]
+name = "lang#python"
+
+[[layers]]
+name = "lang#java"
+
+[[layers]]
+name = "lang#ruby"
+
+[[layers]]
+name = "lang#sh"
+
+[[layers]]
+name = "lang#html"
+
+[[layers]]
+name = "lang#javascript"
+
+[[layers]]
+name = "lang#markdown"
+
+[[custom_plugins]]
+name = 'scrooloose/nerdtree'
+
+[[custom_plugins]]
+name = 'kern/vim-es7'
+
+
